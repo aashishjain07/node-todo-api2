@@ -87,7 +87,7 @@ describe('GET /todos/:id', () => {
   });
 
   it('should return 400 if todo not found', (done) => {
-    //make sure you get 400 back
+    //make sure you get 400  back
     var hexId = new ObjectID().toHexString();
 
     request(app)
