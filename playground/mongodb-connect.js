@@ -2,6 +2,7 @@
 const {MongoClient, ObjectID} = require('mongodb');
 
 MongoClient.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/TodoApp', (err, client) => {
+
   if (err) {
   return console.log('Unable to connect to MONGODB server');
 }
